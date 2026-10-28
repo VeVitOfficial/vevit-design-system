@@ -1,0 +1,3 @@
+---
+category: Stavy a čísla
+---

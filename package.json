@@ -1,0 +1,24 @@
+{
+  "name": "@vevit/design-system",
+  "version": "1.0.0",
+  "description": "VeVit design system: tokens, fonts and React components extracted from vevit.cz (home, ecosystem, tools, premium) in dark and light themes.",
+  "type": "module",
+  "main": "dist/index.es.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.es.js" },
+    "./style.css": "./dist/style.css"
+  },
+  "files": ["dist", "fonts"],
+  "sideEffects": ["*.css"],
+  "scripts": { "build": "node build.mjs" },
+  "peerDependencies": { "react": ">=18", "react-dom": ">=18" },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "esbuild": "^0.25.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.6.0"
+  }
+}

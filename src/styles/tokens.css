@@ -1,0 +1,74 @@
+/* ==========================================================================
+   VeVit tokeny. Tmavý režim je výchozí; světlý se zapíná podle systému
+   (prefers-color-scheme) nebo ručně atributem data-theme="light|dark" na <html>.
+   ========================================================================== */
+:root {
+  color-scheme: dark;
+  --vv-font-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --vv-font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --vv-bg: #0d0d0d;
+  --vv-surface: #161616;
+  --vv-surface-elev: #1e1e1e;
+  --vv-border: rgba(255, 255, 255, 0.08);
+  --vv-border-hover: rgba(255, 255, 255, 0.16);
+  --vv-border-strong: rgba(255, 255, 255, 0.3);
+  --vv-fg-rgb: 255 255 255;
+
+  --vv-text: #f0f0f0;
+  --vv-text-2: #9ca3af;
+  --vv-text-muted: #8b94a3;
+
+  --vv-green: #3fd496;
+  --vv-green-rgb: 63 212 150;
+  --vv-green-hi: #6ee6b4;
+  --vv-green-dim: #32aa78;
+  --vv-accent: var(--vv-green);
+  --vv-accent-hover: var(--vv-green-dim);
+  --vv-accent-ink: #0d0d0d;
+  --vv-accent-soft: rgba(63, 212, 150, 0.1);
+  --vv-accent-border: rgba(63, 212, 150, 0.2);
+
+  /* Barvy aplikací (kategorická paleta, stejná v obou režimech) */
+  --vv-c-tools: #41983e;
+  --vv-c-games: #d06639;
+  --vv-c-edu: #966ac8;
+  --vv-c-services: #3195b9;
+  --vv-c-account: #b2ae34;
+  --vv-c-search: #ca4978;
+  --vv-c-store: #9f418c;
+
+  --vv-danger: #eb4b4b;
+  --vv-warning: #dd9815;
+
+  --vv-radius-sm: 6px;
+  --vv-radius-md: 10px;
+  --vv-radius-lg: 18px;
+  --vv-shadow-tile: rgba(0, 0, 0, 0.55);
+  --vv-ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-color-scheme: light) {
+  html:not([data-theme]) {
+    color-scheme: light;
+    --vv-bg: #f3f5f4; --vv-surface: #ffffff; --vv-surface-elev: #ffffff;
+    --vv-border: rgba(12, 20, 28, 0.09); --vv-border-hover: rgba(12, 20, 28, 0.17); --vv-border-strong: rgba(12, 20, 28, 0.3);
+    --vv-fg-rgb: 12 20 28;
+    --vv-text: #0c141c; --vv-text-2: #43505d; --vv-text-muted: #5a6775;
+    --vv-green: #0a7d54; --vv-green-rgb: 10 125 84; --vv-green-hi: #0a6a46; --vv-green-dim: #075a37;
+    --vv-accent-ink: #ffffff; --vv-accent-soft: rgba(10, 125, 84, 0.1); --vv-accent-border: rgba(10, 125, 84, 0.25);
+    --vv-shadow-tile: rgba(12, 20, 28, 0.22);
+  }
+}
+html[data-theme="light"] {
+  color-scheme: light;
+  --vv-bg: #f3f5f4; --vv-surface: #ffffff; --vv-surface-elev: #ffffff;
+  --vv-border: rgba(12, 20, 28, 0.09); --vv-border-hover: rgba(12, 20, 28, 0.17); --vv-border-strong: rgba(12, 20, 28, 0.3);
+  --vv-fg-rgb: 12 20 28;
+  --vv-text: #0c141c; --vv-text-2: #43505d; --vv-text-muted: #5a6775;
+  --vv-green: #0a7d54; --vv-green-rgb: 10 125 84; --vv-green-hi: #0a6a46; --vv-green-dim: #075a37;
+  --vv-accent-ink: #ffffff; --vv-accent-soft: rgba(10, 125, 84, 0.1); --vv-accent-border: rgba(10, 125, 84, 0.25);
+  --vv-shadow-tile: rgba(12, 20, 28, 0.22);
+}
+
+html, body { background: var(--vv-bg); color: var(--vv-text); font-family: var(--vv-font-sans); margin: 0; -webkit-font-smoothing: antialiased; }

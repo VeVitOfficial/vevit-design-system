@@ -1,0 +1,56 @@
+{
+  "pkg": "@vevit/design-system",
+  "globalName": "VeVit",
+  "shape": "package",
+  "buildCmd": "npm run build",
+  "cssEntry": "dist/style.css",
+  "overrides": {
+    "Atom": {
+      "cardMode": "column"
+    },
+    "EcoTile": {
+      "cardMode": "column"
+    },
+    "Field": {
+      "cardMode": "column"
+    },
+    "FreeMediaBanner": {
+      "cardMode": "column"
+    },
+    "Icon": {
+      "cardMode": "column"
+    },
+    "PrincipleItem": {
+      "cardMode": "column"
+    },
+    "RoadmapRow": {
+      "cardMode": "column"
+    },
+    "ThemeToggle": {
+      "cardMode": "column"
+    },
+    "TierCard": {
+      "cardMode": "column"
+    }
+  },
+  "docsMap": {
+    "Icon": "docs/_groups/Zaklady.md",
+    "Eyebrow": "docs/_groups/Zaklady.md",
+    "SectionHead": "docs/_groups/Zaklady.md",
+    "AppBrand": "docs/_groups/Zaklady.md",
+    "Callout": "docs/_groups/Zaklady.md",
+    "Button": "docs/_groups/Akce.md",
+    "ThemeToggle": "docs/_groups/Akce.md",
+    "StatusPill": "docs/_groups/Stavy-a-cisla.md",
+    "StatInline": "docs/_groups/Stavy-a-cisla.md",
+    "EcoTile": "docs/_groups/Ekosystem.md",
+    "Atom": "docs/_groups/Ekosystem.md",
+    "FreeMediaBanner": "docs/_groups/Ekosystem.md",
+    "ToolRow": "docs/_groups/Seznamy.md",
+    "PrincipleItem": "docs/_groups/Seznamy.md",
+    "RoadmapRow": "docs/_groups/Seznamy.md",
+    "TierCard": "docs/_groups/Plany.md",
+    "Field": "docs/_groups/Formulare.md"
+  },
+  "readmeHeader": ".design-sync/conventions.md"
+}
